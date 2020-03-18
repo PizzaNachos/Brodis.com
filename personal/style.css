@@ -2,16 +2,16 @@
     margin: 0;
     border: 0;
     padding: 0;
-    background-color: rgb(20,20,20);
+    
     font-size: 32px;
 }
 
-#banner h1{
+#intro h1{
     background: inherit;
     font-size: 3em;
     font-family: elephant;
 }
-#banner{
+#intro{
 
     background-image: url("cover.jpg");
     background-attachment: fixed;
@@ -62,6 +62,12 @@
 
     text-align: Left;
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(223, 223, 223);
     color: rgb(20, 20, 20);
+}
+#quote2{
+    padding: 1in;
+    background-color: rgb(0,0,0);
+    text-align: center;
+    color: white;
 }
