@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: white;
+}
+#intro{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: rgb(0, 35, 75);
+
+    background-image: url("cover.jpg");
+    background-attachment: scroll;
+    background-position: left, top;
+    background-repeat: no-repeat;
+    background-size: 75%;
+
+    text-anchor: start;
+
+    line-height: 2em;
+    text-align: left;
+
+    margin-left: 0;
+    margin-right: 5%;
+    
+    border-left: 0;
+
+    padding-left: 50%;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    scrollbar-color: white;
+}
+#banner{
+    margin-top: 2in;
+    margin-bottom: 2in;
+    padding: 1in;
+
+    font-size: 72px;
+
+    text-align: center;
+    font-family: sans-serif;
+    background-color: rgb(0, 35, 75);
+    color: white;
+
+
+}
