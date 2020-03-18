@@ -2,46 +2,66 @@
     margin: 0;
     border: 0;
     padding: 0;
-    background-color: white;
+    background-color: rgb(20,20,20);
+    font-size: 32px;
 }
-#intro{
-    font-family: sans-serif;
-    font-size: 18px;
-    color: rgb(0, 35, 75);
 
-    background-image: url("cover.jpg");
-    background-attachment: scroll;
-    background-position: left, top;
-    background-repeat: no-repeat;
-    background-size: 75%;
-
-    text-anchor: start;
-
-    line-height: 2em;
-    text-align: left;
-
-    margin-left: 0;
-    margin-right: 5%;
-    
-    border-left: 0;
-
-    padding-left: 50%;
-    padding-right: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    scrollbar-color: white;
+#banner h1{
+    background: inherit;
+    font-size: 3em;
+    font-family: elephant;
 }
 #banner{
-    margin-top: 2in;
-    margin-bottom: 2in;
-    padding: 1in;
 
-    font-size: 72px;
+    background-image: url("cover.jpg");
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 50%, 60%;
 
-    text-align: center;
-    font-family: sans-serif;
-    background-color: rgb(0, 35, 75);
+    padding-top: 2in;
+    padding-bottom: 3in;
+    padding-left: 5%;
+    padding-right: 50%;
+
+   
+    line-height: 4em;
+    font-size: 32px;
+
+    text-align: left;
+    font-family:Calibri;
+    background-color: rgb(20, 20, 20);
     color: white;
 
 
+}
+#quote{
+    padding-top: 1in;
+    padding-bottom: 1in;
+    background-color: rgb(0,0,0);
+    text-align: center;
+    color: white;
+}
+#about h1{
+    background: inherit;
+    font-family: inherit;
+    font-size: 2em;
+    padding-bottom: 25px;
+}
+#about{
+    background-image: url("beautiful.jpg");
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 50%, 60%;
+
+    padding-top: 1in;
+    padding-bottom: 3in;
+    padding-right: 5%;
+    padding-left: 55%;
+
+    text-align: Left;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(199, 199, 199);
+    color: rgb(20, 20, 20);
 }
