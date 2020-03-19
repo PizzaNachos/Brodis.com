@@ -38,7 +38,7 @@ ul, li, b, h1{
 
 
 }
-#quote, #quote2, #quote3{
+.quote{
     padding-top: 1in;
     padding-bottom: 1in;
     background-color: rgb(0,0,0);
@@ -111,3 +111,57 @@ a{
     background-color: rgb(20, 20, 20);
     color: white;
 }
+#snake{
+    color:white;
+}
+.spacer{
+    background-color: rgb(25, 25, 25);   
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: .75in;
+    padding-bottom: .75in;
+}
+.projects {
+    display: inline-block; 
+    width:25%;
+    height: 44%;
+    border: 0;
+    vertical-align:top;
+    color:lightblue;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    opacity: 60%;
+}
+.projects h1{
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgb(20, 20, 20);
+    padding: 2.5%;
+}
+
+#web{
+    background: url("websiteBackground.JPG");
+}
+#app{
+    background: url("bugBackground.JPG");
+}
+#word{
+    background: url("snakeBackground.JPG");
+}
+#fml{
+    background: url("quizBackground.PNG");
+}
+.projects:hover{
+    animation-name: example;
+    animation-duration: 1s;
+    opacity: 100%;
+}
+@keyframes example {
+    from {opacity: 60%}
+    to {opacity: 100%;}
+  }
