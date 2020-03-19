@@ -132,6 +132,7 @@ a{
     
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    opacity: 80%;
 }
 #web{
     background: url("websiteBackground.JPG");
@@ -146,5 +147,8 @@ a{
 }
 #fml{
     background: url("bugBackground.JPG");
+}
+.projects:hover{
+    opacity: 100%;
 }
 
