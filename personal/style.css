@@ -115,12 +115,13 @@ a{
     color:white;
 }
 .spacer{
-    background-color: rgb(50, 60, 100);
+    background-color: rgb(25, 25, 25);   
     text-align: center;
     font-size: 1.5em;
     color: white;
-    padding-top: 1in;
-    padding-bottom: 1in;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: .75in;
+    padding-bottom: .75in;
 }
 .projects {
     display: inline-block; 
@@ -128,25 +129,32 @@ a{
     height: 44%;
     border: 0;
     vertical-align:top;
-    color:white;
+    color:lightblue;
     
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    opacity: 80%;
+    opacity: 100%;
 }
+.projects h1{
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgb(20, 20, 20);
+    padding: 2.5%;
+}
+
 #web{
     background: url("websiteBackground.JPG");
-    background-attachment: fixed;
 }
 #app{
     background: url("bugBackground.JPG");
 }
 #word{
     background: url("snakeBackground.JPG");
-    background-attachment: fixed;
 }
 #fml{
-    background: url("bugBackground.JPG");
+    background: url("quizBackground.PNG");
 }
 .projects:hover{
     opacity: 100%;
