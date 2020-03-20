@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: rgb(35,35,35);   
+    font-size: 32px;
+}
+.spacer{
+    padding-top: .75in;
+    padding-bottom: .75in;
+}
+#message{
+    background-color: rgb(25,25,25);
+    color:white;
+    padding: 1in;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
