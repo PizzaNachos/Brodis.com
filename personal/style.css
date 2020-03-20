@@ -166,7 +166,7 @@ a{
     to {opacity: 100%;}
   }
 
-@media only screen and (max-width: 768px) {
+@media (pointer:none), (pointer:coarse) {
     #intro{
         background-image: url("cover.jpg");
         background-attachment: fixed;
