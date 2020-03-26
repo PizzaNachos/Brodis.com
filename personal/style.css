@@ -169,7 +169,7 @@ a{
 @media (pointer:none), (pointer:coarse) {
     #intro{
         background-image: url("cover.jpg");
-        background-attachment: fixed;
+        background-attachment: scroll;
         background-position: top;
         background-repeat: no-repeat;
         background-size: 100%, 100%;
