@@ -167,20 +167,13 @@ a{
   }
 
 @media (pointer:none), (pointer:coarse) {
+    #intro h1{
+        background: black;
+    }
     #intro{
         background-image: url("cover.jpg");
         background-attachment: scroll;
-        background-position: top;
-        background-repeat: no-repeat;
         background-size: 100%, 100%;
-    
-        padding-top: 1in;
-        padding-bottom: 1in;
-        padding-left: 5%;
-        padding-right: 5%;
-    
-       
-        line-height: 4em;
     
         text-align: center;
         font-family:Calibri;
@@ -196,6 +189,7 @@ a{
     }
     #about{
         background-position: center;
+        background-attachment: scroll;
         background-size: 100%;
         padding-top: 1in;
         padding-bottom: 1in;
