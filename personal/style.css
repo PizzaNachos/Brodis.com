@@ -10,14 +10,48 @@ ul, li, b, h1{
     background-color: inherit;
 }
 
+
+
+.nav_bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(30, 30, 30);
+    
+}
+.nav_bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family:Calibri;
+  }
+.nav_bar li {
+    float:left;
+}
+.nav_bar .active {
+    background-color: rgb(223, 223, 223);
+    color: black;
+}
+.nav_bar ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+
+
+
 #intro h1{
     background: inherit;
     font-size: 3em;
     font-family: elephant;
+    padding-top: 62px;
 }
 #intro{
 
-    background-image: url("cover.jpg");
+    background-image: url(pictures/cover.jpg);
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
@@ -52,7 +86,7 @@ ul, li, b, h1{
     padding-bottom: 25px;
 }
 #about{
-    background-image: url("beautiful.jpg");
+    background-image: url(pictures/beautiful.jpg);
     background-attachment: fixed;
     background-position: left;
     background-repeat: no-repeat;
@@ -72,7 +106,7 @@ ul, li, b, h1{
 }
 #hobbies{
 
-    background-image: url("cool.jpg");
+    background-image: url(pictures/cool.jpg);
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
@@ -97,7 +131,7 @@ a{
     color: rgb(240, 240, 240)
 }
 #bragging{
-    background-image: url("notreDame.jpg");
+    background-image: url(pictures/notreDame.jpg);
     background-position: left;
     background-repeat: no-repeat;
     background-size: 50%, 60%;
@@ -145,16 +179,18 @@ a{
 }
 
 #web{
-    background: url("websiteBackground.JPG");
+    background: url(pictures/websiteBackground.JPG);
 }
 #app{
-    background: url("bugBackground.JPG");
+    background: url(pictures/bugBackground.JPG);
 }
 #word{
-    background: url("snakeBackground.JPG");
+    background: url(pictures/snakeBackground.JPG);
 }
 #fml{
-    background: url("quizBackground.PNG");
+    background: url(pictures/arrow_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .projects:hover{
     animation-name: fade;
@@ -171,7 +207,7 @@ a{
         background: none;
     }
     #intro{
-        background-image: url("cover.jpg");
+        background-image: url(pictures/cover.jpg);
         background-attachment: scroll;
         background-position: top;
         background-repeat: no-repeat;
