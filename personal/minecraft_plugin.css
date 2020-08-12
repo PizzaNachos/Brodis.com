@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: black;
+    font-size: 32px;
+    font-family:Calibri;
+}
+ul, li, b, h1{
+    background-color: inherit;
+}
+
+
+
+.nav_bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(30, 30, 30);
+    
+}
+.nav_bar li a {
+    background-color: rgb(30, 30, 30);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family:Calibri;
+  }
+.nav_bar li {
+    float:left;
+}
+.nav_bar .active {
+    background-color: rgb(223, 223, 223);
+    color: black;
+}
+.nav_bar ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.spacer{ 
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 137px;
+    padding-bottom: 75px;
+}
+.spacer h1{
+    background-image: inherit;
+    background-color: rgb(20, 20, 20);   
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    margin: 0;
+    padding: 30px;
+}
+
+#intro h1{
+    background: rgb(20, 20, 20);
+    font-size: 1.5em;
+    font-family:Calibri;
+    padding-top: 62px;
+}
+#intro {
+
+    background-image: url(pictures/minecraft_plugin.JPG);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 50%, 60%;
+
+    padding-top: 2in;
+    padding-bottom: 3in;
+    padding-left: 5%;
+    padding-right: 50%;
+
+   
+    line-height: 1.5em;
+
+    text-align: left;
+    font-family:Calibri;
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+#intro ul{
+    font-family:Calibri;
+}
+#about h1{
+    background: rgb(223, 223, 223);
+    font-family: inherit;
+    font-size: 2em;
+    padding-bottom: 25px;
+}
+#about{
+    background-image: url(pictures/minecraft-screenshot-02.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 50%, 60%;
+
+    padding-top: 1.25in;
+    padding-bottom: 1.25in;
+    padding-right: 5%;
+    padding-left: 55%;
+
+    text-align: justify;
+    background-color: rgb(223, 223, 223);
+    color: rgb(20, 20, 20);
+}
