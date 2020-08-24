@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: rgb(15, 15, 15);
+    font-size: 32px;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none
+}
+ul, li, b, h1{
+    background-color: inherit;
+}
+
+
+
+.nav_bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(30, 30, 30);
+    
+}
+.nav_bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Calibri;
+    background-color: rgb(30, 30, 30);
+  }
+.nav_bar li {
+    float:left;
+    background-color: rgb(30, 30, 30);
+}
+.nav_bar .active {
+    background-color: rgb(223, 223, 223);
+    color: black;
+}
+.nav_bar ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.proj_spacer{
+    display: inline-block; 
+    width:10%;
+    height: 35%;
+    border: 0;
+    vertical-align:top;
+    color:lightblue;
+}
+
+
+.projects {
+    display: inline-block; 
+    width:26%;
+    height: 35%;
+    border: 0;
+    vertical-align:top;
+    color: white;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    opacity: 80%;
+}
+.projects h1{
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgb(20, 20, 20);
+    padding: 2.5%;
+}
+.projects:hover{
+    animation-name: fade;
+    animation-duration: 0s;
+    opacity: 100%;
+}
+@keyframes fade {
+    from {opacity: 60%}
+    to {opacity: 100%;}
+  }
+.intro{ 
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 137px;
+    padding-bottom: 75px;
+}
+.intro h1{
+    background-image: inherit;
+    background-color: rgb(20, 20, 20);   
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    margin: 0;
+    padding: 30px;
+}
