@@ -51,7 +51,7 @@ ul, li, b, h1{
 }
 #intro{
 
-    background-image: url(pictures/cover.jpg);
+    background-image: url(pictures/maob.jpg);
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@ ul, li, b, h1{
     padding-bottom: 25px;
 }
 #about{
-    background-image: url(pictures/beautiful.jpg);
+    background-image: url(pictures/cat_drawer.jpg);
     background-attachment: fixed;
     background-position: left;
     background-repeat: no-repeat;
@@ -106,7 +106,7 @@ ul, li, b, h1{
 }
 #hobbies{
 
-    background-image: url(pictures/cool.jpg);
+    background-image: url(pictures/mountians.jpg);
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
