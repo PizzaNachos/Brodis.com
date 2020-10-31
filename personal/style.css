@@ -2,7 +2,6 @@
     margin: 0;
     border: 0;
     padding: 0;
-    background-color: black;
     font-size: 32px;
     font-family:'Times New Roman', Times, serif;
 }
@@ -13,6 +12,8 @@ ul, li, b, h1{
 
 
 .nav_bar ul {
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -44,35 +45,25 @@ ul, li, b, h1{
 
 
 #intro h1{
-    background: inherit;
     font-size: 3em;
     font-family: elephant;
     padding-top: 62px;
 }
 #intro{
+    padding-top: 15%;
+    padding-bottom: 15%;
 
-    background-image: url(pictures/cover.jpg);
-    background-attachment: fixed;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: 50%, 60%;
-
-    padding-top: 2in;
-    padding-bottom: 3in;
-    padding-left: 5%;
-    padding-right: 50%;
-
-   
     line-height: 4em;
 
-    text-align: left;
+    text-align: center;
     font-family:Calibri;
-    background-color: rgb(20, 20, 20);
     color: white;
 
 
 }
 .quote{
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+
     padding-top: 1in;
     padding-bottom: 1in;
     background-color: rgb(0,0,0);
@@ -86,7 +77,7 @@ ul, li, b, h1{
     padding-bottom: 25px;
 }
 #about{
-    background-image: url(pictures/beautiful.jpg);
+    background-image: url(pictures/cat_drawer.jpg);
     background-attachment: fixed;
     background-position: left;
     background-repeat: no-repeat;
@@ -106,7 +97,7 @@ ul, li, b, h1{
 }
 #hobbies{
 
-    background-image: url(pictures/cool.jpg);
+    background-image: url(pictures/mountians.jpg);
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
@@ -149,6 +140,8 @@ a{
     color:white;
 }
 .spacer{
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+
     background-color: rgb(25, 25, 25);   
     text-align: center;
     font-size: 1.5em;
@@ -158,6 +151,7 @@ a{
     padding-bottom: .75in;
 }
 .projects {
+    background-color: rgb(25, 25, 25);   
     display: inline-block; 
     width:25%;
     height: 44%;
@@ -167,9 +161,10 @@ a{
     
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    opacity: 60%;
 }
 .projects h1{
+    background-color: rgb(25, 25, 25);   
+
     font-family: Arial, Helvetica, sans-serif;
     opacity: 100%;
     text-align: center;
@@ -192,15 +187,6 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.projects:hover{
-    animation-name: fade;
-    animation-duration: 1s;
-    opacity: 100%;
-}
-@keyframes fade {
-    from {opacity: 60%}
-    to {opacity: 100%;}
-  }
 
 @media (pointer:none), (pointer:coarse) {
     #intro h1{
@@ -286,3 +272,14 @@ a{
         color: black;
     }
 }
+
+#tsparticles {
+    position: static;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(15, 15, 15);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+  }
