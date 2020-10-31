@@ -50,3 +50,14 @@ window.onload = function() {
       },
     });
   };
+
+const checkpoint = 800;
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll <= checkpoint) {
+    opacity = (currentScroll  / checkpoint);
+  } else {
+    opacity = 100;
+  }
+  document.querySelector(".nav_bar").style.opacity = opacity;
+});
