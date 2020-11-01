@@ -6,10 +6,9 @@
 
     <body>
         <div id="tsparticles" style="position: fixed; z-index: -1;">
-            <canvas class="tsparticles-canvas-el" style="width: 100%; height: 100%; background-color: rgb(15, 15, 15);" width="1034" height="956">
+            <canvas class="tsparticles-canvas-el"  width="1034" height="956">
             </canvas>
-          </div>
-
+        </div>
         <div class="nav_bar">
             <ul>
                 <li><a class="active" href="Brodis.html">Home</a></li>
@@ -17,9 +16,10 @@
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="BrodisResume.pdf">Resume</a></li>
                 <li style="float:right"><a href="#about">About</a></li>
+                <li style="float:right"><button id='toggleButton' onclick="toggleLightMode()">Toggle Light Mode</button></li>
             </ul>
         </div>
-        
+
         <div id='introContainer'>
             <div id="intro">
                 <h1>
@@ -29,35 +29,61 @@
                 An Aspiring Computer Scientist.
             </div>
         </div>
-        
-
+    
         <div id="beforeProjects", class="spacer">
             Look at some of my projects!
         </div>
 
-
-        <a href="this_website.html">
-        <div id="web", class="projects"> 
-                <br><h1>This Website!</h1>
-        </div></a><a href="android_bug_app.html"><div id="app", class="projects">
-            <br><br><br>
-            <h1>Android Bug Tracking App</h1>
-        </div></a><a href="c_snake.html"><div id="word", class="projects">
-            <br>
-            <h1>Snake written in C</h1>
-        </div></a><a href="proj_list.html"><div id="fml", class="projects">
-            <br><br><br>
-            <h1>Look at all my projects!</h1>
-        </div></a>
-        <div id="beforeProjects", class="spacer">
-             <br>
+        <div id='after'>
+          <a href='www.michaelbrodis.com'>
+            <div id='website' class='wide2'>
+              <h1>This Website!</h1> <br>
+                This website is written in vanilla HTML5, CSS3, and Javascript. 
+                Everything is written by hand from scratch 
+                (except the <a href="https://particles.matteobruni.it/">moving background</a>)
+            </div>
+          </a>
+          <a href='alg/alg.html'>
+            <div id='alg' class='wide2'>
+                <h1>Algorithms Analyzer!</h1> <br>
+                I wrote a small front end web application in vanilla javascript from scratch
+                in order to benchmark different sorting Algorithms in different browsers.
+            </div>
+          </a> 
+          <a href='alg/life.css'>
+            <div id='life' class='wide3'>
+                <h1>Conway's Game of Life</h1> <br>
+                Using the rules created by John Conway, 
+                I recreated the classic computer science 0 player game inside the browser.
+            </div>
+          </a>
+          <a href='android_quiz_app.html'>
+            <div id='quiz' class='wide3'>
+                <h1>Android Quiz App!</h1> <br>
+                This was a Quizlet style app that let you create quizzes, 
+                populate it with questions, 
+                then take the quiz and show you a score.
+                This was written in Java, using android studio and MVC program architecture.
+            </div>
+          </a>
+          <a href="proj_list.html">
+            <div id='all' class='wide3'>
+               <h1>See All my Projects! -></h1>
+            </div>
+          </a>
         </div>
-        
-        <div id="about">
-            <h1>A little about me</h1>
-            I'm Michael Brodis! I am an undergrad BS Computer Science Student with a 3.73 GPA. I was born and raised in Denver Colorado.
-            I am passionate about Computing, Problem Solving, Food, Animals, Cooking, Exercise, and i enjoy playing video games with my friends on the weekends.
 
+        <div id="quote4", class="quote">
+          "Computer is not a device anymore, it is an extension of your mind and a gateway to other people" 
+          -Mark Shuttleworth
+      </div>
+        
+        <div id="about" class='paragraph'>
+            <h1>A little about Me</h1>
+            <text>
+              I'm Michael Brodis! I am an undergrad BS Computer Science Student with a 3.73 GPA. I was born and raised in Denver Colorado.
+              I am passionate about Computing, Problem Solving, Food, Animals, Cooking, Exercise, and i enjoy playing video games with my friends on the weekends.
+            </text>
         </div>
 
         <div id="quote3", class="quote">
@@ -77,10 +103,7 @@
 
         </div>
 
-        <div id="quote4", class="quote">
-            "Computer is not a device anymore, it is an extension of your mind and a gateway to other people" 
-            -Mark Shuttleworth
-        </div>
+        
 
 
         <div id="bragging">

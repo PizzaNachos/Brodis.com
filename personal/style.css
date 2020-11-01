@@ -1,21 +1,41 @@
+:root {
+  --toggle-color: rgb(73, 133, 226);
+  --main-bg-color: rgb(15,15,15);
+  --main-light-grey: rgb(30, 30, 30);
+  --main-dark-grey: rgb(25, 25, 25);
+  --main-light: rgb(223, 223, 223);
+  --shadow-color: rgb(0, 0, 0);
+  --text-color: white;
+  --project-background: rgba(40,40,40,.85);
+  --global-opacity: 1;
+}
+
 *{
     margin: 0;
     border: 0;
     padding: 0;
     font-size: 32px;
     font-family:'Times New Roman', Times, serif;
+    opacity: var(--global-opacity);
 }
 ul, li, b, h1{
     background-color: inherit;
 }
 
-
 .nav_bar{
     opacity: 0;
 }
+#toggleButton{
+    background-color: var(--toggle-color);
+    display: block;
+    color:rgb(223, 223, 223);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Calibri;
+}
 .nav_bar ul {
-    background-color: rgb(30, 30, 30);
-    z-index: 1;
+    background-color: rgb(35, 35, 35);
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -24,9 +44,8 @@ ul, li, b, h1{
     width: 100%;
 }
 .nav_bar li a {
-    background-color: rgb(30, 30, 30);
     display: block;
-    color: white;
+    color:--text-color;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -37,8 +56,12 @@ ul, li, b, h1{
 }
 .nav_bar .active {
     background-color: rgb(223, 223, 223);
-    color: black;
+    color: var(--shadow-color);
 }
+.nav_bar:hover {
+  opacity: 100%;
+}
+
 
   
 
@@ -50,7 +73,7 @@ ul, li, b, h1{
     padding-top: 62px;
 }
 #introContainer{
-    z-index: 0;
+  z-index: -1;
     height: 100%;
     position: relative;
 }
@@ -61,47 +84,42 @@ ul, li, b, h1{
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    /*
-    padding-top: 15%;
-    padding-bottom: 15%;
-    */
     line-height: 4em;
-
     text-align: center;
     font-family:Calibri;
-    color: white;
+    color: var(--text-color);
 }
 .quote{
-    box-shadow: 0 0 10px rgb(0, 0, 0);
+    box-shadow: 0 0 10px var(--shadow-color);
 
     padding-top: 1in;
     padding-bottom: 1in;
-    background-color: rgb(0,0,0);
+    background-color:  var(--main-dark-grey);
     text-align: center;
-    color: white;
-}
-#about h1{
-    background: inherit;
-    font-family: inherit;
-    font-size: 2em;
-    padding-bottom: 25px;
+    color: var(--text-color);
 }
 #about{
-    background-image: url(pictures/cat_drawer.jpg);
-    background-attachment: fixed;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: 50%, 60%;
-
-    padding-top: 2in;
-    padding-bottom: 2in;
-    padding-right: 5%;
-    padding-left: 55%;
-
-    text-align: justify;
-    background-color: rgb(223, 223, 223);
-    color: rgb(20, 20, 20);
+  padding: 5%;
+  background-color:rgb(35, 35, 35);
+  color:rgb(233, 233, 233);
+  text-align: left;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
 }
+.paragraph h1{
+  font-family: Calibri;
+  background: none;
+  text-align: center;
+  font-size: 1.5em;
+}
+.paragraph text{
+  padding: 10px;
+  text-indent: 1em;
+}
+#ho
 #hobbies h1{
     font-size: 2em;
 }
@@ -120,7 +138,7 @@ ul, li, b, h1{
 
     text-align: left;
     
-    background-color: rgb(20, 20, 20);
+    background-color: var(--main-dark-grey);
     color: white;
 }
 #bragging ol{
@@ -129,7 +147,7 @@ ul, li, b, h1{
 }
 a{
     background-color: inherit;
-    color: rgb(240, 240, 240)
+    color: var(--main-light);
 }
 #bragging{
     background-image: url(pictures/notreDame.jpg);
@@ -143,60 +161,97 @@ a{
     padding-left: 55%;
 
     text-align: left;
-    background-color: rgb(20, 20, 20);
+    background-color:  var(--main-dark-grey);
     color: white;
 }
 #snake{
     color:white;
 }
 .spacer{
-    box-shadow: 0 0 10px rgb(0, 0, 0);
+    box-shadow: 0 0 10px var(--shadow-color);
 
-    background-color: rgb(25, 25, 25);   
+    background-color: var(--main-bg-color);   
     text-align: center;
     font-size: 1.5em;
-    color: white;
+    color: var(--text-color);
     font-family: Arial, Helvetica, sans-serif;
     padding-top: .75in;
     padding-bottom: .75in;
 }
-.projects {
-    background-color: rgb(25, 25, 25);   
-    display: inline-block; 
-    width:25%;
-    height: 44%;
-    border: 0;
-    vertical-align:top;
-    color:lightblue;
-    
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+#after h1{
+  font-family: Calibri;
+  background: none;
+  text-align: center;
+  font-size: 1.5em;
 }
-.projects h1{
-    background-color: rgb(25, 25, 25);   
+#after a{
+  text-decoration: none;
+  font-family:Calibri;
+  background: none;
+}
+.wide2{
+  display: inline-block;
+  width: 40%;
+  height: auto;
+  vertical-align: top;
+  margin-left: 5%;
+  margin-top: 2%;
+  padding-left: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: var(--project-background);
+  box-shadow: 0 0 30px var(--shadow-color);
+  text-align: left;
+  font-family:Calibri;
+}
+#website{
+  color: var(--main-light);
+}
+#alg{
+  color: var(--main-light);
+}
+.wide3{
+  display: inline-block;
+  width: 28%;
+  height: auto;
+  vertical-align: top;
+  margin-left: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding-left: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: var(--project-background);
+  color: var(--main-light);
+  box-shadow: 0 0 30px var(--shadow-color);
+  text-align: left;
+  font-family:Calibri;
+}
+#life{
+  color: var(--main-light);
+}
+#quiz{
+  color: var(--main-light);
+}
 
-    font-family: Arial, Helvetica, sans-serif;
-    opacity: 100%;
-    text-align: center;
-    color: white;
-    background-color: rgb(20, 20, 20);
-    padding: 2.5%;
-}
-
-#web{
-    background: url(pictures/websiteBackground.JPG);
-}
-#app{
-    background: url(pictures/bugBackground.JPG);
-}
-#word{
-    background: url(pictures/snakeBackground.JPG);
-}
-#fml{
-    background: url(pictures/arrow_background.png);
+#tsparticles {
+    position: static;
+    background-attachment: fixed;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(15, 15, 15);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 50% 50%;
 }
+.tsparticles-canvas-el{
+  width: 100%; 
+  height: 100%; 
+  background-color: var(--main-bg-color);
+}
+
+
 
 @media (pointer:none), (pointer:coarse) {
     #intro h1{
@@ -282,14 +337,3 @@ a{
         color: black;
     }
 }
-
-#tsparticles {
-    position: static;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(15, 15, 15);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 50% 50%;
-  }
