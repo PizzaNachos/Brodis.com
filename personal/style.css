@@ -123,6 +123,7 @@
   background: none;
 }
 #hobbies{
+    box-shadow: 0 0 10px rgb(0, 0, 0);
     background-image: url(pictures/mountians.jpg);
     background-position: right;
     background-repeat: no-repeat;
@@ -151,6 +152,7 @@ a{
   background: none;
 }
 #bragging{
+    box-shadow: 0 0 10px rgb(0, 0, 0);
     background-image: url(pictures/notreDame.jpg);
     background-position: left;
     background-repeat: no-repeat;
@@ -172,7 +174,6 @@ a{
 }
 .spacer{
     box-shadow: 0 0 10px var(--shadow-color);
-    
     background-color:rgb(35, 35, 35);   
     text-align: center;
     font-size: 1.5em;

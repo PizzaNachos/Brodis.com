@@ -1,0 +1,72 @@
+<html>
+  <meta charset="utf-8">
+  <head>
+      <title>Algorithms</title>
+      <link rel="stylesheet" href="alg.css">      
+  </head>
+
+  <body>
+    <div id="tsparticles" style="position: fixed; z-index: -1;">
+      <canvas class="tsparticles-canvas-el" style="width: 100%; height: 100%; background-color: rgb(25, 25, 25);" width="1034" height="956">
+      </canvas>
+    </div>
+    <div class="nav_bar">
+      <ul>
+          <li><a class="active" href="alg.html">Sorting</a></li>
+          <li><a href="life.html">Game of Life</a></li>
+      </ul>
+    </div>
+
+    <div class="banner">
+      <h1>Sorting Algorithms Analyzer/Visualizer</h1> 
+    </div>
+
+    <div id=canv>
+      <canvas id="canvas" width="1000" height="500"></canvas>
+      <text>500</text>
+      <input type='range' min='500' max='100000' value='50000' id='slider'>100,000</input>
+      <text id=sliderNumber></text>
+
+      <div id='content'>
+        <div id='innerButtons'>
+        <button type="button" onclick="mergeSort(nums)">Merge Sort</button>        
+        <button type="button" onclick="quickSort(nums)">Quick Sort</button>
+        <button type="button" onclick="systemSort(nums)">System Sort</button>
+        <button type="button" onclick="bubbleSort(nums)">Bubble Sort</button> 
+        
+          <!-- Does not work! Needs re-writing using counting sort, see https://www.geeksforgeeks.org/radix-sort/
+            <button type="button" onclick="radixSort(nums)">Radix Sort</button>
+          -->
+
+        </div>
+        <div id='innerButtons'>
+          
+          <button type="button" style="background-color: rgb(35,35,40)" onclick="scramble(nums)">Scramble</button>        
+          <button type="button" style="background-color: rgb(35,35,40)" onclick="reverseSort(nums)">Reverse Sort</button>
+            
+            <!-- Does not work! Needs re-writing using counting sort, see https://www.geeksforgeeks.org/radix-sort/
+              <button type="button" onclick="radixSort(nums)">Radix Sort</button>
+            -->
+
+          </div>
+      </div>
+      
+      <div id='info'>
+        <p id="bigO">BigO() </p>
+        <p id="time">Miliseconds: </p> 
+        <p id="comp">Comparrisons:</p>
+        <p id="swap">Array swaps: </p>
+      </div>
+    </div>
+
+    <div id='sortingDetails' class='after'></div>
+
+    <div class="banner">
+      <br><br> 
+    </div>
+
+  <script src="alg.js"></script>    
+  <script src="node_modules/tsparticles/dist/tsparticles.js"></script>
+    
+  </body>
+</html>
