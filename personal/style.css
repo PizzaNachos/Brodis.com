@@ -60,11 +60,6 @@
   opacity: 100%;
 }
 
-
-  
-
-
-
 #intro h1{
     font-size: 3em;
     font-family: elephant;
@@ -123,7 +118,7 @@
   background: none;
 }
 #hobbies{
-    box-shadow: 0 0 10px rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
     background-image: url(pictures/mountians.jpg);
     background-position: right;
     background-repeat: no-repeat;
@@ -133,7 +128,7 @@
     padding-left: 5%;
     padding-right: 55%;
 
-    margin:2%;
+    margin: 5% 2%;
 
     text-align: left;
     
@@ -152,7 +147,7 @@ a{
   background: none;
 }
 #bragging{
-    box-shadow: 0 0 10px rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
     background-image: url(pictures/notreDame.jpg);
     background-position: left;
     background-repeat: no-repeat;
@@ -163,7 +158,7 @@ a{
     padding-right: 5%;
     padding-left: 55%;
 
-    margin:2%;
+    margin: 5% 2%;
 
     text-align: left;
     background-color:   var(--about-background);
