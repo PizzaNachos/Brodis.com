@@ -6,7 +6,7 @@
   --main-light: rgb(223, 223, 223);
   --shadow-color: rgb(0, 0, 0);
   --text-color: white;
-  --project-background: rgba(40,40,40,.85);
+  --project-background: rgba(40,40,40,1);
   --about-background: rgba(0,0,0,.4);
   --global-opacity: 1;
 }
