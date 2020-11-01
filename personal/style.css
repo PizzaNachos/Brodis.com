@@ -7,6 +7,7 @@
   --shadow-color: rgb(0, 0, 0);
   --text-color: white;
   --project-background: rgba(40,40,40,.85);
+  --about-background: rgba(0,0,0,.4);
   --global-opacity: 1;
 }
 
@@ -17,9 +18,6 @@
     font-size: 32px;
     font-family:'Times New Roman', Times, serif;
     opacity: var(--global-opacity);
-}
-ul, li, b, h1{
-    background-color: inherit;
 }
 
 .nav_bar{
@@ -91,12 +89,11 @@ ul, li, b, h1{
 }
 .quote{
     box-shadow: 0 0 10px var(--shadow-color);
-
+    background-color:rgb(35, 35, 35);
     padding-top: 1in;
     padding-bottom: 1in;
-    background-color:  var(--main-dark-grey);
     text-align: center;
-    color: var(--text-color);
+    color: white;
 }
 #about{
   padding: 5%;
@@ -119,35 +116,39 @@ ul, li, b, h1{
   padding: 10px;
   text-indent: 1em;
 }
-#ho
 #hobbies h1{
     font-size: 2em;
 }
+#hobbies *{
+  background: none;
+}
 #hobbies{
-
     background-image: url(pictures/mountians.jpg);
-    background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
-    background-size: 50%, 60%;
-
-    padding-top: 2in;
-    padding-bottom: 2in;
+    background-size: 50%;
+    padding-top: 1in;
+    padding-bottom: 1in;
     padding-left: 5%;
     padding-right: 55%;
 
+    margin:2%;
+
     text-align: left;
     
-    background-color: var(--main-dark-grey);
+    background-color: var(--about-background);
     color: white;
 }
 #bragging ol{
-    background-color: inherit;
+    background-color: none;
     padding-left: .5in;
 }
 a{
     background-color: inherit;
     color: var(--main-light);
+}
+#bragging *{
+  background: none;
 }
 #bragging{
     background-image: url(pictures/notreDame.jpg);
@@ -160,8 +161,10 @@ a{
     padding-right: 5%;
     padding-left: 55%;
 
+    margin:2%;
+
     text-align: left;
-    background-color:  var(--main-dark-grey);
+    background-color:   var(--about-background);
     color: white;
 }
 #snake{
@@ -169,11 +172,11 @@ a{
 }
 .spacer{
     box-shadow: 0 0 10px var(--shadow-color);
-
-    background-color: var(--main-bg-color);   
+    
+    background-color:rgb(35, 35, 35);   
     text-align: center;
     font-size: 1.5em;
-    color: var(--text-color);
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: .75in;
     padding-bottom: .75in;
@@ -232,6 +235,11 @@ a{
 }
 #quiz{
   color: var(--main-light);
+}
+#all{
+  color: var(--main-light);
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 
 #tsparticles {
