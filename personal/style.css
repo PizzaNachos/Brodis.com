@@ -188,6 +188,25 @@ a{
   font-family:Calibri;
   background: none;
 }
+.wide2:hover {
+  animation-name: example;
+  animation-duration: 0.5s;
+  background: black;
+}
+.wide3:hover {
+  animation-name: example;
+  animation-duration: 0.5s;
+  background: black;
+}
+@keyframes example {
+  from {
+    background: var(--project-background);
+  }
+  to {
+    background: black;
+    opacity: 100%;
+  }
+}
 .wide2{
   display: inline-block;
   width: 40%;
