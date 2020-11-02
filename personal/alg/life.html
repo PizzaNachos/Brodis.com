@@ -1,0 +1,88 @@
+<html>
+  <meta charset="utf-8">
+  <head>
+      <title>The Game Of Life</title>
+      <link rel="stylesheet" href="life.css">      
+  </head>
+
+  <body>
+
+    <div id="tsparticles" style="position: fixed; z-index: -1;">
+      <canvas class="tsparticles-canvas-el" style="width: 100%; height: 100%; background-color: rgb(25, 25, 25);" width="1034" height="956">
+      </canvas>
+    </div>
+
+    <div class="nav_bar">
+      <ul>
+          <li><a href="alg.html">Sorting</a></li>
+          <li><a class="active" href="life.html">Game of Life</a></li>
+      </ul>
+    </div>
+
+    <div class="banner">
+      <h1>Conway's game of life</h1> 
+    </div>
+
+    <div id=canv>
+      <canvas id="canvas" width="1000" height="600"></canvas>
+      <div id='pixelButtons'>
+        <text>Cell Size: </text>
+        <button type="button" onclick="changeSize(1)">Tiny</button> 
+        <button type="button" onclick="changeSize(2)">Small</button> 
+        <button type="button" onclick="changeSize(5)">Medium</button> 
+        <button type="button" onclick="changeSize(10)">Large</button> 
+      </div>
+      <div id='content'>
+        <div id='innerButtons'>
+          <button type="button" onclick="life()">Cycle of Life</button> 
+          <button type="button" onclick="randomizePixels()">Randomize</button>
+          <button type="button" onclick="clearPixels()">Clear</button>
+          <button type="button" onclick="animateLife()">Toggle Animation</button>
+        </div>
+      </div>
+    </div>
+
+    <div id='after'>
+      <h1>So what is the game of life?</h1>
+      <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway's Game of life</a> is a classic mathematical/computer science problem/game. 
+      <br>
+      The board is populated with cells and these cells have rules.
+      <ol>
+        <li>Any live cell with fewer than two live neighbors dies, as if by under population.</li>
+        <li>Any live cell with two or three live neighbors lives on to the next generation.</li>
+        <li>Any live cell with more than three live neighbors dies, as if by overpopulation.</li>
+        <li>Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.</li>
+      </ol>
+      This game is an example of the <a href="https://en.wikipedia.org/wiki/Halting_problem">Halting problem</a>, 
+      and is in its self <a href="https://en.wikipedia.org/wiki/Turing_completeness">turing complete</a> 
+
+    </div>
+
+    <div id='after'>
+      
+      <h1>What were the challenges of implementing this?</h1>
+      <div id='paragraph'>
+      Just the basic rules is enough to get started but fleshing out the implementation details from scratch are another beast.
+      I needed to make the concept of a cell, be able to tell how many neighbors it has, and draw it to the canvas. 
+      </div>
+      <div id='paragraph'>
+      I toyed with the idea of making a cell class and an assortment of cells that each have their own methods to check neighbors and
+      draw to the screen, however that felt overkill for how simple this was.
+      Instead i simply made an array of cells(booleans) that are either alive(true) or dead(false). 
+      </div>
+      <div id='paragraph'>
+      The most difficult part in drawing them to the 
+      screen was how slow it seemed to be. However after some debugging i remembered that i was changing the canvas fill color every time
+      i went to draw a cell. That paired with the fact that i don't actually need to draw the dead cells, just the alive ones, led to a
+      dramatic increase in performance and it became fast enough that i could toy with animating it. 
+      </div>
+    </div>
+
+    <div class="banner">
+      <br><br> 
+    </div>
+
+    <script src="life.js"></script>   
+    <script src="node_modules/tsparticles/dist/tsparticles.js"></script>
+  </body>
+</html>
