@@ -1,118 +1,135 @@
 <html>
-    <head>
-        <title>Michael Brodis</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+  <head>
+    <title>Michael Brodis</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-    <body>
-        <div id="tsparticles" style="position: fixed; z-index: -1;">
-            <canvas class="tsparticles-canvas-el"  width="1034" height="956">
-            </canvas>
-        </div>
-        <div class="nav_bar">
-            <ul>
-                <li><a class="active" href="Brodis.html">Home</a></li>
-                <li><a href="proj_list.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li style="float:right"><a href="#about">About</a></li>
-                <li style="float:right"><button id='toggleButton' onclick="toggleLightMode()">Toggle Light Mode</button></li>
-            </ul>
-        </div>
-
-        <div id='introContainer'>
-            <div id="intro">
-                <h1>
-                    Michael <br> 
-                    Brodis <br>
-                </h1>
-                An Aspiring Computer Scientist.
-            </div>
-        </div>
+  <body>
+    <div id="tsparticles" style="position: fixed; z-index: -1">
+      <canvas class="tsparticles-canvas-el" width="1034" height="956"> </canvas>
+    </div>
     
-        <div id="beforeProjects", class="spacer">
-            Look at some of my projects!
-        </div>
+    <div class="nav_bar">
+      <ul>
+        <li><a class="active" href="Brodis.html">Home</a></li>
+        <li><a href="proj_list.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li style="float: right"><a href="#about">About</a></li>
+        <li style="float: right">
+          <button id="toggleButton" onclick="toggleLightMode()">
+            Toggle Light Mode
+          </button>
+        </li>
+      </ul>
+    </div>
 
-        <div id='after'>
-          <a href='this_website.html'>
-            <div id='website' class='wide2'>
-              <h1>This Website!</h1> <br>
-              This website is written in vanilla HTML5, CSS3, and Javascript. 
-              Everything is written by hand from scratch 
-              (except the moving background)
-            </div>
-          </a>
-          <a href='alg/alg.html'>
-            <div id='alg' class='wide2'>
-                <h1>Algorithms Analyzer!</h1> <br>
-                I wrote a small front end web application in vanilla javascript from scratch
-                in order to benchmark different sorting Algorithms in different browsers.
-            </div>
-          </a> 
-          <a href='alg/life.html'>
-            <div id='life' class='wide3'>
-                <h1>Conway's Game of Life</h1> <br>
-                Using the rules created by John Conway, 
-                I recreated the classic computer science/Math theory 0 player game inside the browser.
-            </div>
-          </a>
-          <a href='android_quiz_app.html'>
-            <div id='quiz' class='wide3'>
-                <h1>Android Quiz App!</h1> <br>
-                This was a Quizlet style app that lets you create quizzes, 
-                populate it with questions, 
-                then take the quiz.
-                Written in Java, using android studio and MVC program architecture.
-            </div>
-          </a>
-          <a href="proj_list.html">
-            <div id='all' class='wide3'>
-               <h1>See more projects! -></h1>
-            </div>
-          </a>
-        </div>
-
-        <div id="quote4", class="quote">
-          "Computer is not a device anymore, it is an extension of your mind and a gateway to other people" 
-          -Mark Shuttleworth
+    <div id="introContainer">
+      <div id="intro">
+        <h1>
+          Michael <br />
+          Brodis <br />
+        </h1>
+        An Aspiring Computer Scientist.
       </div>
-        
-        <div id="about" class='paragraph'>
-            <h1>A little about Me</h1>
-            <text>
-              I'm Michael Brodis! I am an undergrad BS Computer Science Student with a 3.73 GPA. I was born and raised in Denver Colorado.
-              I am passionate about Computing, Problem Solving, Food, Animals, Cooking, Exercise, and I enjoy playing video games with my friends on the weekends.
-            </text>
-        </div>
+    </div>
 
-        <div id="quote3", class="quote">
-            "Computers are incredibly fast, accurate, and stupid. Humans are incredibly slow, inaccurate, and brilliant. Together they are powerful beyond imagination." 
-            -Albert Einstein
-        </div>
+    <div id="beforeProjects" , class="spacer">Look at some of my projects!</div>
 
-        <div id="hobbies">
-            <h1>What am i into?</h1>
-            <ul>
-                <li><b>Fitness</b>, I like exercising! I like running, and mountain biking, but I also really enjoy weightlifting and strongman.</li>
-                <li><b>Learning</b>, I like to learn as much as I can about as many things as a can.</li>
-                <li><b>Video Games</b>, I like competitive video games like Counter Strike: Global Offensive, Rocket league, and Rainbow 6 seige.</li>
-                <li><b>Cooking</b>, I love cooking and baking!</li>
-            </ul>
+    <div id="after">
+      <a href="this_website.html">
+        <div id="website" class="wide2">
+          <h1>This Website!</h1>
+          <br />
+          This website is written in vanilla HTML5, CSS3, and Javascript.
+          Everything is written by hand from scratch (except the moving
+          background)
         </div>
-
-        <div id="bragging">
-            By now you're probably thinking, "Wow, how can i hire this dude?"
-            <ol>
-                <li>Shoot me an email at Michael(at)michaelbrodis(dot)com</li>
-                <li>Schedule an interview!</li>
-            </ol>
-
+      </a>
+      <a href="alg/alg.html">
+        <div id="alg" class="wide2">
+          <h1>Algorithms Analyzer!</h1>
+          <br />
+          I wrote a small front end web application in vanilla javascript from
+          scratch in order to benchmark different sorting Algorithms in
+          different browsers.
         </div>
-
-        <div id="beforeProjects", class="spacer">
-            <br>
+      </a>
+      <a href="alg/life.html">
+        <div id="life" class="wide3">
+          <h1>Conway's Game of Life</h1>
+          <br />
+          Using the rules created by John Conway, I recreated the classic
+          computer science/Math theory 0 player game inside the browser.
         </div>
-        <script src="brodis.js"></script>    
-        <script src="alg/node_modules/tsparticles/dist/tsparticles.js"></script>
-    </body>
+      </a>
+      <a href="android_quiz_app.html">
+        <div id="quiz" class="wide3">
+          <h1>Android Quiz App!</h1>
+          <br />
+          This was a Quizlet style app that lets you create quizzes, populate it
+          with questions, then take the quiz. Written in Java, using android
+          studio and MVC program architecture.
+        </div>
+      </a>
+      <a href="proj_list.html">
+        <div id="all" class="wide3">
+          <h1>See more projects! -></h1>
+        </div>
+      </a>
+    </div>
+
+    <div id="quote4" , class="quote">
+      "Computer is not a device anymore, it is an extension of your mind and a
+      gateway to other people" -Mark Shuttleworth
+    </div>
+
+    <div id="about" class="paragraph">
+      <h1>A little about Me</h1>
+      <text>
+        I'm Michael Brodis! I am an undergrad BS Computer Science Student with a
+        3.73 GPA. I was born and raised in Denver Colorado. I am passionate
+        about Computing, Problem Solving, Food, Animals, Cooking, Exercise, and
+        I enjoy playing video games with my friends on the weekends.
+      </text>
+    </div>
+
+    <div id="quote3" , class="quote">
+      "Computers are incredibly fast, accurate, and stupid. Humans are
+      incredibly slow, inaccurate, and brilliant. Together they are powerful
+      beyond imagination." -Albert Einstein
+    </div>
+
+    <div id="hobbies">
+      <h1>What am i into?</h1>
+      <ul>
+        <li>
+          <b>Fitness</b>, I like exercising! I like running, and mountain
+          biking, but I also really enjoy weightlifting and strongman.
+        </li>
+        <li>
+          <b>Learning</b>, I like to learn as much as I can about as many things
+          as a can.
+        </li>
+        <li>
+          <b>Video Games</b>, I like competitive video games like Counter
+          Strike: Global Offensive, Rocket league, and Rainbow 6 seige.
+        </li>
+        <li><b>Cooking</b>, I love cooking and baking!</li>
+      </ul>
+    </div>
+
+    <div id="bragging">
+      By now you're probably thinking, "Wow, how can i hire this dude?"
+      <ol>
+        <li>Shoot me an email at Michael(at)michaelbrodis(dot)com</li>
+        <li>Schedule an interview!</li>
+      </ol>
+    </div>
+
+    <div id="beforeProjects" , class="spacer">
+      <br />
+    </div>
+    <script src="brodis.js"></script>
+    <script src="alg/node_modules/tsparticles/dist/tsparticles.js"></script>
+  </body>
 </html>
