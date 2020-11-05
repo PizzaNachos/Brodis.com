@@ -1,5 +1,5 @@
 let lineColor = "#4985e2";
-let circleColor = "rgb(255,255,255)";
+let circleColor = "rgba(255,255,255,0)";
 
 window.onload = function () {
   tsParticles
@@ -24,8 +24,8 @@ window.onload = function () {
         type: "circle",
       },
       size: {
-        value: 3,
-        random: true,
+        value: 0,
+        random: false,
       },
       lineLinked: {
         enable: true,
@@ -118,7 +118,7 @@ function toggleLightMode() {
     lightmode = true;
   } else {
     lineColor = "#4985e2";
-    circleColor = "rgb(255,255,255)";
+    circleColor = "rgba(200,200,200)";
     tsParticles.load("tsparticles", {
       particles: {
         number: {
@@ -135,8 +135,8 @@ function toggleLightMode() {
           type: "circle",
         },
         size: {
-          value: 3,
-          random: true,
+          value: 0,
+          random: false,
         },
         lineLinked: {
           enable: true,
