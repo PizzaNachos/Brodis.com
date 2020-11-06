@@ -55,12 +55,12 @@ button {
   display: inline-block;
 }
 #canv {
-  background: rgb(35, 35, 35);
+  background: rgb(0, 0, 0);
   box-shadow: 0 0 10px rgb(0, 0, 0);
   margin: 0 auto;
-  margin-top: 0.25in;
-  padding: 0.25in;
-  width: 600px;
+  margin-top: .25in;
+  padding-bottom: .5in;
+  width: 1000px;
 }
 #canv canvas {
   padding-bottom: 10px;

@@ -33,7 +33,7 @@ window.onload = function () {
         distance: 130,
         color: "rgb(0,0,0)",
         opacity: 1,
-        width: 2,
+        width: 1,
       },
       move: {
         enable: true,
@@ -62,9 +62,46 @@ let rightx = 0.5;
 let topy = 1;
 let bottomy = -1;
 
+leftxSlider = document.getElementById("leftx");
+rightxSlider = document.getElementById("rightx");
+topySlider = document.getElementById("topy");
+bottomySlider = document.getElementById("bottomy");
+
+let mouseX;
+let mouseY;
+
+document.addEventListener("mousemove", mouseMoveHandler, false);
+function mouseMoveHandler(e) {
+  var relativeX = e.clientX - canvas.offsetLeft;
+  var relativeY = e.clientY - canvas.offsetTop;
+  if(relativeX > 0 && relativeX < canvas.width) {
+    mouseX = relativeX;
+    mouseY = relativeY;
+  }
+}
+
+
+leftxSlider.addEventListener("change", () => {
+    leftx = leftxSlider.valueAsNumber;
+    doStuff();
+});
+rightxSlider.addEventListener("change", () => {
+  rightx = rightxSlider.valueAsNumber;
+  doStuff();
+});
+topySlider.addEventListener("change", () => {
+  topy = topySlider.valueAsNumber;
+  doStuff();
+});
+bottomySlider.addEventListener("change", () => {
+  bottomy = bottomySlider.valueAsNumber;
+  doStuff();
+});
+  
 doStuff();
 
 function doStuff() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
   let px;
   let py;
   for (let i = 0; i < canvas.height; i++) {
@@ -72,8 +109,10 @@ function doStuff() {
     for (let j = 0; j < canvas.width; j++) {
       px = translate(j, 0, canvas.width, leftx, rightx);
       let test = testNum(px, py, 255);
-      ctx.fillStyle = "rgb(0,0," + test + ")";
-      ctx.fillRect(j, i, 1, 1);
+      if(test != 255){
+        ctx.fillStyle = "rgb(" + (test%125)*2 + "," + (test%125)*2 + "," + (test%125)*2 +")";
+        ctx.fillRect(j, i, 1, 1);
+      } 
     }
   }
 }

@@ -8,15 +8,16 @@
   <body>
     <div id="tsparticles" style="position: fixed; z-index: -1;">
       <canvas class="tsparticles-canvas-el" 
-      style="width: 100%; height: 100%; background-color: rgb(20, 20, 20);"
+      style="width: 100%; height: 100%; background-color: rgb(50, 50, 50);"
       width="1034" height="956">
       </canvas>
     </div>
     <div class="nav_bar">
       <ul>
           <li><a href="..\Brodis.html">Home</a></li>
-          <li><a class="active" href="alg.html">Sorting</a></li>
+          <li><a href="alg.html">Sorting</a></li>
           <li><a href="life.html">Game of Life</a></li>
+          <li><a class="active" href="set.html">Mandelbrot Set</a></li>
           <li><a href="..\proj_list.html">All Projects</a></li>
       </ul>
     </div>
@@ -26,7 +27,17 @@
     </div>
 
     <div id=canv>
-      <canvas id="canvas" width="600" height="600"></canvas>
+        <canvas id="canvas" width="1000" height="1000"></canvas>
+        
+        <input type="range" id="leftx" name="volume"
+         min="-2" max=".5" value="-1.5" step=".001">
+        <input type="range" id="rightx" name="volume"
+         min="-2" max=".5" value=".5" step=".001">
+        <input type="range" id="topy" name="volume"
+         min="-1" max="1" value="-1" step=".001">
+         <input type="range" id="bottomy" name="volume"
+         min="-1" max="1" value="1" step=".001">
+
     </div>
       
     <div class="banner">
