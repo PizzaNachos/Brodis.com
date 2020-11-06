@@ -61,6 +61,7 @@ button {
   margin-top: .25in;
   padding-bottom: .5in;
   width: 1000px;
+  padding: .25in;
 }
 #canv canvas {
   padding-bottom: 10px;
