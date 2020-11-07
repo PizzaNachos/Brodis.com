@@ -82,8 +82,8 @@ function mouseMoveHandler(e) {
 
 
 leftxSlider.addEventListener("change", () => {
-    leftx = leftxSlider.valueAsNumber;
-    doStuff();
+  leftx = leftxSlider.valueAsNumber;
+  doStuff();
 });
 rightxSlider.addEventListener("change", () => {
   rightx = rightxSlider.valueAsNumber;
@@ -98,6 +98,19 @@ bottomySlider.addEventListener("change", () => {
   doStuff();
 });
   
+// function square(){
+//   let diffx = rightx - leftx;
+//   let diffy = bottomy-topy;
+//   if(diffx < diffy){
+//     topy = leftx
+//     bottomy = rightx
+//   } else {
+//     rightx = topy
+//     leftx = bottomy
+//   }
+//   doStuff()
+// }
+
 doStuff();
 
 function doStuff() {

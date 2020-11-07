@@ -279,26 +279,10 @@ a {
 
 @media (pointer: none), (pointer: coarse) {
   #intro h1 {
-    background: none;
-  }
-  #intro {
-    background-image: url(pictures/cover.jpg);
-    background-attachment: scroll;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 100%, 100%;
-
-    padding-top: 1in;
-    padding-bottom: 1in;
-    padding-left: 5%;
-    padding-right: 5%;
-
-    line-height: 4em;
-  }
-  #intro h1 {
     font-size: 3em;
     font-family: elephant;
     padding-top: 62px;
+    background: none;
   }
   #introContainer {
     z-index: -1;

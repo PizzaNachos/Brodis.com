@@ -29,16 +29,38 @@
     <div id=canv>
         <canvas id="canvas" width="1000" height="1000"></canvas>
         
-        <input type="range" id="leftx" name="volume"
-         min="-2" max=".5" value="-1.5" step=".001">
-        <input type="range" id="rightx" name="volume"
-         min="-2" max=".5" value=".5" step=".001">
-        <input type="range" id="topy" name="volume"
-         min="-1" max="1" value="-1" step=".001">
-         <input type="range" id="bottomy" name="volume"
-         min="-1" max="1" value="1" step=".001">
-
+        <div class=slider> 
+            <input type="range" id="leftx" name="volume"
+             min="-2" max=".5" value="-1.5" step=".0001">
+             Left Bound
+        </div>
+        <div class=slider>
+            <input type="range" id="rightx" name="volume"
+            min="-2" max=".5" value=".5" step=".0001">
+            Right Bound
+        </div>
+        <div class=slider> 
+            <input type="range" id="topy" name="volume"
+            min="-1" max="1" value="-1" step=".0001">
+            Bottom Bound
+        </div>
+        <div class=slider>
+            <input type="range" id="bottomy" name="volume"
+            min="-1" max="1" value="1" step=".0001">
+            Top Bound
+        </div>
+        <button onclick="square()">Square</button>
     </div>
+
+    <div id='after'>
+        <h1>So what is the Mandelbrot set?</h1>
+        <a href="https://en.wikipedia.org/wiki/Mandelbrot_set">The Mandelbrot set</a> 
+        is a fractal that is graphed on the complex plain. The X axis is the real part (a) and the Y axis is the imaginary part (bi).
+        By taking an imaginary number and squaring it and adding it to its self over and over again, then seeing wether the value trends to infinity or stabilizes you get this shape.
+        The black are numbers that stabilize, and the more white the pixel is the more iterations it took to trend to infinity. 
+        
+  
+      </div>
       
     <div class="banner">
       <br><br> 
