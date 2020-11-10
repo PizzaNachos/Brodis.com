@@ -70,15 +70,7 @@ bottomySlider = document.getElementById("bottomy");
 let mouseX;
 let mouseY;
 
-document.addEventListener("mousemove", mouseMoveHandler, false);
-function mouseMoveHandler(e) {
-  var relativeX = e.clientX - canvas.offsetLeft;
-  var relativeY = e.clientY - canvas.offsetTop;
-  if(relativeX > 0 && relativeX < canvas.width) {
-    mouseX = relativeX;
-    mouseY = relativeY;
-  }
-}
+
 
 
 leftxSlider.addEventListener("change", () => {
@@ -110,10 +102,45 @@ bottomySlider.addEventListener("change", () => {
 //   }
 //   doStuff()
 // }
+canvas.onwheel = zoom;
+function zoom(event) {
+  event.preventDefault();
+  let ammount = event.deltaY * .1;
+  leftx += ammount;
+  rightx += -ammount;
+  topy += -ammount;
+  bottomy += ammount;
+  doStuff();
+}
+document.addEventListener("mousemove", mouseMoveHandler, false);
+function mouseMoveHandler(e) {
+  var relativeX = e.clientX - canvas.offsetLeft;
+  var relativeY = e.clientY - canvas.offsetTop;
+  if(relativeX > 0 && relativeX < canvas.width) {
+    mouseX = relativeX;
+    mouseY = relativeY;
+  }
+}
 
 doStuff();
 
+
+//This function is painfully slow, sometimes taking over a second to compute and draw to the screen
+//Not sure if the computing or the drawing is slower
+//The drawing takes the most time, the render time is halved by not drawing black squares.
+//Cutting #of iteration by 1/5 took 400-500ms off render time, (from ~1200 to ~800(~900?))
+//but filling the screen with drawn pixels increases the render time to 
+//Not changing color nearly halves render time(91 ms fastest, 1000 slowest)
+// |Iterations| Color change? | Time |
+// |51        | [ ]           | 600  | Looks horrific
+// |51        | [X]           | 1500 | Looks Weird
+// |255       | [X]           | 1800 | Looks Good
+// |255       | [ ]           | 1000 | Looks very bad
+
+//The drawing takes more time than the iterations -> 300 ms difference vs 1000ms difference.
+
 function doStuff() {
+  let t0 = performance.now();
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   let px;
   let py;
@@ -122,12 +149,15 @@ function doStuff() {
     for (let j = 0; j < canvas.width; j++) {
       px = translate(j, 0, canvas.width, leftx, rightx);
       let test = testNum(px, py, 255);
-      if(test != 255 && ((test%200)-10)*2 >= 1){
+      if(test != 255 && ((test%200)-10)*2 >= 5){
         ctx.fillStyle = "rgb(" + ((test%200)-10)*2 + "," + ((test%200)-10)*2 + "," + ((test%200)-10)*2 +")";
         ctx.fillRect(j, i, 1, 1);
       }
     }
   }
+  let t1 = performance.now();
+  console.log("MS to render: " + (t1-t0));
+  console.log("Left X: " + leftx + " Right X: " + rightx + " Top Y: " + topy +" Bottom Y: " + bottomy);
 }
 function testNum(real, imaginary, time) {
   let previousReal = real;
