@@ -122,10 +122,10 @@ function doStuff() {
     for (let j = 0; j < canvas.width; j++) {
       px = translate(j, 0, canvas.width, leftx, rightx);
       let test = testNum(px, py, 255);
-      if(test != 255){
-        ctx.fillStyle = "rgb(" + (test%125)*2 + "," + (test%125)*2 + "," + (test%125)*2 +")";
+      if(test != 255 && ((test%200)-10)*2 >= 1){
+        ctx.fillStyle = "rgb(" + ((test%200)-10)*2 + "," + ((test%200)-10)*2 + "," + ((test%200)-10)*2 +")";
         ctx.fillRect(j, i, 1, 1);
-      } 
+      }
     }
   }
 }
